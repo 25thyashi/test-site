@@ -267,3 +267,21 @@ body.dark {
     transform: perspective(400px) rotateX(0deg) rotateY(0deg) scale(1);
   }
 }
+/* ===== OUTER FRAME (white space) ===== */
+
+.page-frame {
+  min-height: 100vh;
+  background: #ffffff;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+/* ===== INNER CANVAS (actual site) ===== */
+
+.site-canvas {
+  position: relative;
+  min-height: calc(100vh - 64px);
+  background: var(--light);
+  border-radius: 20px;
+  overflow: hidden;
+}
